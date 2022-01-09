@@ -20,8 +20,6 @@ class MainActivity : AppCompatActivity() {
         var text = findViewById<TextView>(R.id.result1)
         var text2 = findViewById<TextView>(R.id.result2)
         var text3 = findViewById<TextView>(R.id.result3)
-
-
         spinner1.adapter = ArrayAdapter.createFromResource(this, R.array.gucksunamu, android.R.layout.simple_dropdown_item_1line)
         spinner2.adapter = ArrayAdapter.createFromResource(this, R.array.junghwan, android.R.layout.simple_dropdown_item_1line)
         spinner3.adapter = ArrayAdapter.createFromResource(this, R.array.lotteria, android.R.layout.simple_dropdown_item_1line)
@@ -40,7 +38,7 @@ class MainActivity : AppCompatActivity() {
                 when (position) {
                     //선택안함
                     0 -> {
-                        text.setText("전 굶습니다...")
+                        text.setText("선택사항 없음")
                     }
                     1 -> {
                         text.setText(spinner1.selectedItem.toString())
@@ -199,7 +197,7 @@ class MainActivity : AppCompatActivity() {
                 when (position) {
                     //선택안함
                     0 -> {
-                        text2.setText("전 굶습니다...")
+                        text2.setText("선택사항 없음")
                     }
                     1 -> {
                         text2.setText(spinner2.selectedItem.toString())
@@ -460,7 +458,7 @@ class MainActivity : AppCompatActivity() {
                 when (position) {
                     //선택안함
                     0 -> {
-                        text3.setText("전 굶습니다...")
+                        text3.setText("선택사항 없음")
                     }
                     1 -> {
                         text3.setText(spinner3.selectedItem.toString())
