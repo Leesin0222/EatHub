@@ -1,3 +1,221 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="gucksunamu">
+        <item>굶기</item>
+        <item>국치정식(생면+미니치돈)\n9000원</item>
+        <item>로제정식(로제돈까스+미니우동)\n11500원</item>
+        <item>소치정식(메밀소바+미니치돈)\n11000원</item>
+        <item>소고기낙지덮밥\n8500원</item>
+        <item>힘찬정식(소고기낙지덮밥+미니우동)\n11000원</item>
+        <item>국만정식(생면+찐만두 고기4)\n7000원</item>
+        <item>진국정식(쌀국사+새우튀김2개)\n9500원</item>
+        <item>치즈돈까스\n9500원</item>
+        <item>아쿠아돈까스\n10000원</item>
+        <item>로제돈까스\n9900원</item>
+        <item>김치찌개돈까스\n8000원</item>
+        <item>옛날왕돈까스\n8900원</item>
+        <item>생면국수\n5500원</item>
+        <item>소고기짬뽕\n9500원</item>
+        <item>상하이진짬뽕\n8000원</item>
+        <item>새콤달콤비빔면\n7000원</item>
+        <item>새우튀김우동\n7500원</item>
+        <item>국수나무우동\n6000원</item>
+        <item>나가사키짬뽕\n9500원</item>
+        <item>베트남소고기짬뽕\n7500원</item>
+        <item>고고제육면\n8500원</item>
+        <item>규동\n8300원</item>
+        <item>고고제육덮밥\n8000원</item>
+        <item>소고기짬뽕밥\n9500원</item>
+        <item>상하이진한짬뽕밥\n8000원</item>
+        <item>국수나무알밥\n7500원</item>
+        <item>돈까스카레덮밥\n8000원</item>
+        <item>오리엔탈오므라이스\n8000원</item>
+        <item>메밀소바\n7500원</item>
+        <item>모듬어묵탕면\n7500원</item>
+        <item>모듬어묵우동\n7500원</item>
+        <item>미니고구마치즈돈까스\n4000원</item>
+        <item>미니치즈돈까스\n3500원</item>
+        <item>새우튀김\n2개 : 2000원</item>
+        <item>국물떡볶이\n4000원</item>
+        <item>만들어먹는 주먹밥\n3500원</item>
+        <item>미니우동\n2500원</item>
+        <item>공기밥\n1000원</item>
+        <item>생면사리\n1500원</item>
+        <item>짬뽕면사리\n1500원</item>
+        <item>우동사리\n1500원</item>
+        <item>찐만두(고기만두4개)\n1500원</item>
+        <item>메밀면사리\n1500원</item>
+        <item>갈비츄러스만두\n1500원</item>
+        <item>롱김말이\n1500원</item>
+    </string-array>
+    <string-array name="lotteria">
+        <item>굶음</item>
+        <item>1인혼닭세트\n11100원</item>
+        <item>1인혼닭\n10200원</item>
+        <item>유러피안프리코치즈버거\n5900원</item>
+        <item>블랙오징어버거\n4000원</item>
+        <item>치즈No.5버거\n4500원</item>
+        <item>사각새우더블버거\n4800원</item>
+        <item>스위트어스어썸버거\n6400원</item>
+        <item>폴더버거비프\n6100원</item>
+        <item>DoubleX2버거\n6000원</item>
+        <item>T-Rex버거\n4000원</item>
+        <item>모짜렐라인더버거 베이컨\n6500원</item>
+        <item>와규에디션2\n6300원</item>
+        <item>한우불고기버거\n7500원</item>
+        <item>원조빅불\n6200원</item>
+        <item>핫크리스피버거\n5200원</item>
+        <item>클래식 치즈버거\n4800원</item>
+        <item>불고기버거\n4100원</item>
+        <item>데리버거\n2900원</item>
+        <item>새우버거\n4100원</item>
+        <item>리아미라클버거\n6000원</item>
+        <item>치킨버거\n3300원</item>
+        <item>순살치킨 풀팩\n15900원</item>
+        <item>순살치킨 하프팩\n8900원</item>
+        <item>치킨 1조각(부위랜덤)\n2500원</item>
+        <item>치킨풀팩(콘샐러드)\n19000원</item>
+        <item>치킨하프(콘샐러드)\n9500원</item>
+        <item>치킨풀팩(포테이토)\n19000원</item>
+        <item>치킨하프(포테이토)\n9500원</item>
+        <item>패밀리팩(태)콘샐러드\n13800원</item>
+        <item>패밀리팩(태)포테이트\n13800원</item>
+        <item>치킨휠레 2조각\n2700원</item>
+        <item>치킨휠레 4조각\n4900원</item>
+        <item>화이어윙2(태)\n2700원</item>
+        <item>화이어윙4(태)\n4900원</item>
+        <item>유러피안프리코치즈버거세트\n7700원</item>
+        <item>블랙오징어버거세트\n6000원</item>
+        <item>치즈No.5세트\n6500원</item>
+        <item>사각새우더블세트\n6800원</item>
+        <item>스위트어스어썸버거세트\n8500원</item>
+        <item>폴더버거비프세트\n7900원</item>
+        <item>DoubleX2세트\n7800원</item>
+        <item>T-Rex버거 세트\n6100원</item>
+        <item>모짜렐라인더버거 베이컨세트\n8300원</item>
+        <item>와규에디션2세트\n8100원</item>
+        <item>한우불고기버거세트\n9200원</item>
+        <item>원조빅불세트\n8000원</item>
+        <item>핫크리스피버거세트\n7000원</item>
+        <item>클래식 치즈버거세트\n6800원</item>
+        <item>불고기버거세트\n6200원</item>
+        <item>데리세트\n5100원</item>
+        <item>새우버거세트\n6200원</item>
+        <item>리아미라클세트\n7800원</item>
+        <item>치킨버거세트\n5500원</item>
+        <item>모짜렐라크림치즈볼\n1900원</item>
+        <item>토네이도 허쉬초코\n2500원</item>
+        <item>치즈인더에그\n3000원</item>
+        <item>양념감자\n2100원</item>
+        <item>오징어링\n2300원</item>
+        <item>치즈스틱\n2100원</item>
+        <item>롱치즈스틱\n1900원</item>
+        <item>콘샐러드\n1800원</item>
+        <item>포테이토(R)\n1600원</item>
+        <item>포테이토(L)\n2000원</item>
+        <item>지파이 고소한맛(S)\n3700원</item>
+        <item>지파이 하바네로(L)\n4700원</item>
+        <item>치킨너겟\n1800원</item>
+        <item>쉑쉑치킨\n2600원</item>
+        <item>토네이도초코쿠키\n2500원</item>
+        <item>토네이도녹차\n2500원</item>
+        <item>토네이도스트로베리\n2500원</item>
+        <item>아이스티\n2200원</item>
+        <item>아이스티L\n2500원</item>
+        <item>아이스카페라떼\n2500원</item>
+        <item>카페라떼\n2500원</item>
+        <item>레몬에이드\n2500원</item>
+        <item>레몬에이드L\n2800원</item>
+        <item>아메리카노\nT:2100원</item>
+        <item>아이스아메리카노\n2100원</item>
+        <item>아이스아메L\n2500원</item>
+        <item>NEW홈투게더팩\n11800원</item>
+        <item>NEW홈투게더팩(사이다)\n11800원</item>
+        <item>NEW홈더블팩\n14200원</item>
+        <item>NEW홈패밀리팩\n19200원</item>
+        <item>NEW홈더블팩(사이다)\n14200원</item>
+        <item>NEW홈패밀리팩(사이다)\n19200원</item>
+        </string-array>
+    <string-array name="junghwan">
+        <item>굶기</item>
+        <item>마라 차돌박이 순두부\n9500원</item>
+        <item>1인 돼지김치짜글이도시락\n13000원</item>
+        <item>1인 순두부 찌개 도시락\n1300원</item>
+        <item>1인 김치찌개 도시락\n13000원</item>
+        <item>1인 청국장 도시락\n13000원</item>
+        <item>1인 된장찌개 도시락\n13000원</item>
+        <item>1인 김치볶음밥 도시락\n13000원</item>
+        <item>1인 볶음밥 도시락\n13000원</item>
+        <item>1인 오므라이스 도시락\n13000원</item>
+        <item>1인 덮밥 도시락\n13000원</item>
+        <item>돼지김치짜글이\n9000원</item>
+        <item>차돌박이순두부찌개\n9000원</item>
+        <item>차돌박이된장찌개\n9000원</item>
+        <item>차돌박이청국장\n9500원</item>
+        <item>김치찌개\n8500원</item>
+        <item>된장찌개\n8500원</item>
+        <item>청국장\n9500원</item>
+        <item>해물된장찌개\n9000원</item>
+        <item>참치김치찌개\n9000원</item>
+        <item>스팸김치찌개\n9000원</item>
+        <item>차돌박이김치찌개\n9000원</item>
+        <item>순두부찌개\n8500원</item>
+        <item>해물순두부찌개\n9000원</item>
+        <item>김치순두부찌개\n9000원</item>
+        <item>육개장\n9000원</item>
+        <item>갈비탕\n9000원</item>
+        <item>곰탕\n9000원</item>
+        <item>사골우거지탕\n9000원</item>
+        <item>소고기떡국\n8500원</item>
+        <item>소고기떡만두국\n9000원</item>
+        <item>김치볶음밥\n8500원</item>
+        <item>참치김치볶음밥\n9000원</item>
+        <item>스팸김치볶음밥\n9000원</item>
+        <item>베이컨김치볶음밥\n9000원</item>
+        <item>차돌박이김치볶음밥\n9000원</item>
+        <item>새우볶음밥\n9000원</item>
+        <item>해물볶음밥\n9000원</item>
+        <item>스팸볶음밥\n9000원</item>
+        <item>소고기볶음밥\n9000원</item>
+        <item>낙지볶음밥\n9000원</item>
+        <item>오므라이스\n9000원</item>
+        <item>스팸오므라이스\n9500원</item>
+        <item>참치오므라이스\n9500원</item>
+        <item>새우오므라이스\n9500원</item>
+        <item>차돌김치오므라이스\n9500원</item>
+        <item>베이컨볶음밥\n9000원</item>
+        <item>제육덮밥\n8500원</item>
+        <item>김치제육덮밥\n9000원</item>
+        <item>오징어덮밥\n9000원</item>
+        <item>낙지덮밥\n9000원</item>
+        <item>참치김치덮밥\n8500원</item>
+        <item>치킨마요\n7500원</item>
+        <item>참치마요\n7500원</item>
+        <item>스팸마요\n7500원</item>
+        <item>돈까스마요\n8000원</item>
+        <item>등심돈까스\n9500원</item>
+        <item>매콤돈까스\n10500원</item>
+        <item>통 모짜렐라치즈돈까스\n10500원</item>
+        <item>단호박치즈돈까스\n9500원</item>
+        <item>생선까스\n9500원</item>
+        <item>고기왕만두 5개\n6000원</item>
+        <item>김치왕만두 5개\n6000원</item>
+        <item>갈비왕만두 5개\n6000원</item>
+        <item>갈비만두 7개\n6000원</item>
+        <item>물만두 20개\n6000원</item>
+        <item>왕새우튀김 5개\n6000원</item>
+        <item>군만두 6개\n6000원</item>
+        <item>고구마튀김 5개\n5500원</item>
+        <item>김말이튀김 5개\n5500원</item>
+        <item>모듬튀김\n5500원</item>
+        <item>우동\n5500원</item>
+        <item>김치우동\n7000원</item>
+        <item>왕새우튀김우동\n8000원</item>
+        <item>우동면 추가\n2000원</item>
+        <item>모둠 만두\n7000원</item>
+        <item>바싹 고등어 단품(밥X)\11000원</item>
+        <item>갈치 구이 단품(밥X)\n11000원</item>
+        <item>공기밥\n1000원</item>
+        <item>우동면\n2000원</item>
+    </string-array>
 </resources>
