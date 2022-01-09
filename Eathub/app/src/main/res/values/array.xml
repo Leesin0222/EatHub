@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="gucksunamu">
-        <item>굶기</item>
+        <item>선택사항 없음</item>
         <item>국치정식(생면+미니치돈)\n9000원</item>
         <item>로제정식(로제돈까스+미니우동)\n11500원</item>
         <item>소치정식(메밀소바+미니치돈)\n11000원</item>
@@ -49,7 +49,7 @@
         <item>롱김말이\n1500원</item>
     </string-array>
     <string-array name="lotteria">
-        <item>굶음</item>
+        <item>선택사항 없음</item>
         <item>1인혼닭세트\n11100원</item>
         <item>1인혼닭\n10200원</item>
         <item>유러피안프리코치즈버거\n5900원</item>
@@ -137,7 +137,7 @@
         <item>NEW홈패밀리팩(사이다)\n19200원</item>
         </string-array>
     <string-array name="junghwan">
-        <item>굶기</item>
+        <item>선택사항 없음</item>
         <item>마라 차돌박이 순두부\n9500원</item>
         <item>1인 돼지김치짜글이도시락\n13000원</item>
         <item>1인 순두부 찌개 도시락\n1300원</item>
