@@ -1,18 +1,25 @@
 package com.yongjincompany.eathub
 
+import android.app.AlertDialog
+import android.content.Intent
+import android.graphics.Bitmap
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
-import android.widget.Spinner
-import android.widget.TextView
+import android.widget.*
+import androidx.core.content.FileProvider
+import java.io.File
+import java.io.FileOutputStream
+import java.io.IOException
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         setTheme(R.style.Theme_Eathub)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        var sharebutton = findViewById<Button>(R.id.share)
 
         val spinner1 = findViewById<Spinner>(R.id.spinner1)
         val spinner2 = findViewById<Spinner>(R.id.spinner2)
@@ -24,10 +31,34 @@ class MainActivity : AppCompatActivity() {
         var text3 = findViewById<TextView>(R.id.result3)
         var text4 = findViewById<TextView>(R.id.result4)
 
-        spinner1.adapter = ArrayAdapter.createFromResource(this, R.array.gucksunamu, android.R.layout.simple_dropdown_item_1line)
-        spinner2.adapter = ArrayAdapter.createFromResource(this, R.array.junghwan, android.R.layout.simple_dropdown_item_1line)
-        spinner3.adapter = ArrayAdapter.createFromResource(this, R.array.lotteria, android.R.layout.simple_dropdown_item_1line)
-        spinner4.adapter = ArrayAdapter.createFromResource(this, R.array.sidemenu, android.R.layout.simple_dropdown_item_1line)
+        spinner1.adapter = ArrayAdapter.createFromResource(
+            this,
+            R.array.gucksunamu,
+            android.R.layout.simple_dropdown_item_1line
+        )
+        spinner2.adapter = ArrayAdapter.createFromResource(
+            this,
+            R.array.junghwan,
+            android.R.layout.simple_dropdown_item_1line
+        )
+        spinner3.adapter = ArrayAdapter.createFromResource(
+            this,
+            R.array.lotteria,
+            android.R.layout.simple_dropdown_item_1line
+        )
+        spinner4.adapter = ArrayAdapter.createFromResource(
+            this,
+            R.array.sidemenu,
+            android.R.layout.simple_dropdown_item_1line
+        )
+
+        sharebutton.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(v: View?) {
+                sharebutton.visibility = View.INVISIBLE
+                ScreenShot()
+                sharebutton.visibility = View.VISIBLE
+            }
+        })
 
         spinner1.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {
@@ -746,8 +777,46 @@ class MainActivity : AppCompatActivity() {
                     //일치하는게 없는 경우
                     else ->
                         text4.setText("메뉴")
-                    }
                 }
             }
         }
     }
+
+    var Time = 0L
+    override fun onBackPressed() {
+        if (System.currentTimeMillis() - Time >= 1500) {
+            Time = System.currentTimeMillis()
+            Toast.makeText(this, "뒤로가기 버튼을 한번 더 누르면 종료됩니다.", Toast.LENGTH_SHORT).show()
+        } else {
+            finish()
+        }
+    }
+
+    //화면 캡쳐하기
+    fun ScreenShot() {
+        val view: View = window.decorView.rootView
+        view.setDrawingCacheEnabled(true) //화면에 뿌릴때 캐시 사용
+
+        //캐시 -> 비트맵 변환
+        val screenBitmap: Bitmap = Bitmap.createBitmap(view.getDrawingCache())
+        try {
+            val cachePath = File(applicationContext.cacheDir, "images")
+            cachePath.mkdirs() // don't forget to make the directory
+            val stream =
+                FileOutputStream(cachePath.toString() + "/image.png") // overwrites this image every time
+            screenBitmap.compress(Bitmap.CompressFormat.PNG, 100, stream)
+            stream.close()
+            val newFile = File(cachePath, "image.png")
+            val contentUri: Uri = FileProvider.getUriForFile(
+                applicationContext,
+                "com.yongjincompany.eathub", newFile
+            )
+            val Sharing_intent = Intent(Intent.ACTION_SEND)
+            Sharing_intent.setType("image/png")
+            Sharing_intent.putExtra(Intent.EXTRA_STREAM, contentUri)
+            startActivity(Intent.createChooser(Sharing_intent, "Share image"))
+        } catch (e: IOException) {
+            e.printStackTrace()
+        }
+    }
+}
