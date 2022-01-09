@@ -16,13 +16,17 @@ class MainActivity : AppCompatActivity() {
         val spinner1 = findViewById<Spinner>(R.id.spinner1)
         val spinner2 = findViewById<Spinner>(R.id.spinner2)
         val spinner3 = findViewById<Spinner>(R.id.spinner3)
+        val spinner4 = findViewById<Spinner>(R.id.spinner4)
 
         var text = findViewById<TextView>(R.id.result1)
         var text2 = findViewById<TextView>(R.id.result2)
         var text3 = findViewById<TextView>(R.id.result3)
+        var text4 = findViewById<TextView>(R.id.result4)
+
         spinner1.adapter = ArrayAdapter.createFromResource(this, R.array.gucksunamu, android.R.layout.simple_dropdown_item_1line)
         spinner2.adapter = ArrayAdapter.createFromResource(this, R.array.junghwan, android.R.layout.simple_dropdown_item_1line)
         spinner3.adapter = ArrayAdapter.createFromResource(this, R.array.lotteria, android.R.layout.simple_dropdown_item_1line)
+        spinner4.adapter = ArrayAdapter.createFromResource(this, R.array.sidemenu, android.R.layout.simple_dropdown_item_1line)
 
         spinner1.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {
@@ -637,87 +641,6 @@ class MainActivity : AppCompatActivity() {
                     59 -> {
                         text3.setText(spinner3.selectedItem.toString())
                     }
-                    60 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    61 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    62 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    63 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    64 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    65 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    66 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    67 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    68 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    69 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    70 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    71 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    72 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    73 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    74 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    75 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    76 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    77 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    78 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    79 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    80 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    81 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    82 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    83 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    84 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    85 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
-                    86 -> {
-                        text3.setText(spinner3.selectedItem.toString())
-                    }
                     //일치하는게 없는 경우
                     else -> {
                         text3.setText("메뉴")
@@ -725,5 +648,105 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+        spinner4.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+
+            }
+
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                when (position) {
+                    //선택안함
+                    0 -> {
+                        text4.setText("선택사항 없음")
+                    }
+                    1 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    2 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    3 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    4 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    5 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    6 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    7 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    8 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    9 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    10 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    11 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    12 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    13 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    14 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    15 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    16 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    17 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    18 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    19 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    20 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    21 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    22 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    23 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    24 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    25 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    26 -> {
+                        text4.setText(spinner4.selectedItem.toString())
+                    }
+                    //일치하는게 없는 경우
+                    else ->
+                        text4.setText("메뉴")
+                    }
+                }
+            }
+        }
     }
-}
